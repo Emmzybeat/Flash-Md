@@ -26,7 +26,7 @@
     "AUTO_VIEW_STATUS": {
       "description": "Automatically view your contacts' status updates. Type 'on' to activate or 'off' to deactivate.",
       "value": "on",
-      "required": false
+      "required": true
     },
     "AUTO_SAVE_STATUS": {
       "description": "Automatically download and send status updates from your contacts. Type 'yes' to enable or 'no' to disable.",
@@ -60,8 +60,8 @@
     },
     "BOT_MODE": {
       "description": "Set the bot to 'private' mode to restrict access to certain users or 'public' mode for general access.",
-      "value": "public",
-      "required": false
+      "value": "private",
+      "required": true
     },
     "HEROKU_API_KEY": {
       "description": "Insert your Heroku API key here. This allows you to manage environment variables and other settings more effectively.",
@@ -73,19 +73,19 @@
       "required": false
     },
     "SESSION_ID": {
-      "description": "Place your unique FLASH MD session ID here. This is required for the bot to function.",
+      "description": "Place your unique FLASH MD session ID here. This is required for the bot to function."FLASH-MD-WA-BOT;;;=>eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiYUNCamVLNTNWeFNCZGFjdmdSVldvdzdjaDczZ29PUUN2MmNSdnZKSTFGaz0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiUzNzOTlpMlY2Mmwvb2t6RWcyVFdXZS91OXlmamdKa0NNNzNTcTl4bFZHcz0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJRTGtZWXEyV0swbjh2MW9XYTJXNE8rM2sxRlZMSEhNVzRZcGlEMGVZODF3PSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiJrcldLUjlMRUZZTkE2L282RkZYYnBKYlpYTlNENjM4NVZRZ0QwNC9HLzJzPSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IklITVpTejNad0MrZXk5VmNFYmpuRm12TExyei9CWmZzUUsvaEk1RXlQMWc9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6InA3S1lZZXhUWGN2OVg0NTd6bGpVQVQ5bnZOQjZjTjF4NDdJNnFReHhqekk9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiNEZaSDJQU3duUmxTZGMxQ3VVOUllSVQyd3ZCVWp3MEtOK2RydGFmTHZXWT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiNUcyUDdlMVBNOXJKNkE1emJyZ0xhMGNLNDJuWVhRREVCMnp5QThkSGJWND0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IjFWOUFJQlBhTDg0c0xuR20rT3R2OFcxK09vSkdFZ084cThzb2gwbm5ROHlzbnMxYmQ5VjhkdSsxRlN6YUViQzFGOXoxVGZpK2crc210OHhXdHFPZmlBPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6MCwiYWR2U2VjcmV0S2V5IjoiUUR3dGFoSFJQc0l1VG5zemtKemZwZEFDdkpDekR6cUhmaW1LeDU1Zmp2QT0iLCJwcm9jZXNzZWRIaXN0b3J5TWVzc2FnZXMiOlt7ImtleSI6eyJyZW1vdGVKaWQiOiIyMzQ3MDY0MTkwMzExQHMud2hhdHNhcHAubmV0IiwiZnJvbU1lIjp0cnVlLCJpZCI6IjNBNkM1QzUwRkJCNkYxMEM0Qjg4In0sIm1lc3NhZ2VUaW1lc3RhbXAiOjE3MzM1MDc1MjV9LHsia2V5Ijp7InJlbW90ZUppZCI6IjIzNDcwNjQxOTAzMTFAcy53aGF0c2FwcC5uZXQiLCJmcm9tTWUiOnRydWUsImlkIjoiM0FFOTgxQzhBQjNDOUVGNjgyNDgifSwibWVzc2FnZVRpbWVzdGFtcCI6MTczMzUwNzUyOH1dLCJuZXh0UHJlS2V5SWQiOjMxLCJmaXJzdFVudXBsb2FkZWRQcmVLZXlJZCI6MzEsImFjY291bnRTeW5jQ291bnRlciI6MSwiYWNjb3VudFNldHRpbmdzIjp7InVuYXJjaGl2ZUNoYXRzIjpmYWxzZX0sImRldmljZUlkIjoidzdXRjB0bWhTUDZwbEx0ZlNKZnNSdyIsInBob25lSWQiOiIzMzQ5NmEyYi1lZGY4LTQzMWQtOWYzZC00ZTc1NTlkOTU1ODAiLCJpZGVudGl0eUlkIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiUmVtNi9BZGNaVDd0WGRDR3Zxejd3SktHMVVzPSJ9LCJyZWdpc3RlcmVkIjp0cnVlLCJiYWNrdXBUb2tlbiI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Ii9qRlFOd2g1VGIwUldlUzhENUZrV3BwejN0VT0ifSwicmVnaXN0cmF0aW9uIjp7fSwicGFpcmluZ0NvZGUiOiJFRjU0OUgyVyIsIm1lIjp7ImlkIjoiMjM0NzA2NDE5MDMxMTo3QHMud2hhdHNhcHAubmV0IiwibmFtZSI6IkVtbXp5YmVhdCJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDUExyclV3UXRQUE11Z1lZQVNBQUtBQT0iLCJhY2NvdW50U2lnbmF0dXJlS2V5IjoidjNMaWhiMlNzQlRpMVJNRGVWRWVCa2ZtaC80Q2J5QkVocU1wK1VjdWUwVT0iLCJhY2NvdW50U2lnbmF0dXJlIjoieTdRUkduQ3hOUkdmLzZjU3Z5aVdyOHdtM3RoOVNXaGlQQ2wyc3dpRlpYWW0vVEN3bkRCK3RvQ0xudlRPbi9YWTZvcS9SMFlVeGhIenZXYU9sKzBRQ0E9PSIsImRldmljZVNpZ25hdHVyZSI6IlZXa3BjbnB4d1lNbStXMDZTdjVWYmlDampsYkEwNUM4OVhTUXQvNmdJVUxZV0FrYzZ4eDhwVTZrL2xMSmZsNFpuRXg1dTI3bHRUb0l5aUtTNUVaempRPT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMjM0NzA2NDE5MDMxMTo3QHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQmI5eTRvVzlrckFVNHRVVEEzbFJIZ1pINW9mK0FtOGdSSWFqS2ZsSExudEYifX1dLCJwbGF0Zm9ybSI6InNtYmkiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3MzM1MDc1MjEsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBSHdpIn0="
       "value": "",
       "required": true
     },
     "OWNER_NAME": {
       "description": "Enter the name of the bot owner. This name will be displayed when required.",
-      "value": "France King",
-      "required": false
+      "value": "EMMZY BEAT ",
+      "required": true
     },
     "OWNER_NUMBER": {
       "description": "Enter your phone number without the '+' sign. Use your country code (e.g., '254' for Kenya).",
-      "value": "254751284190",
-      "required": false
+      "value": "2347064190311",
+      "required": true
     },
     "WARN_COUNT": {
       "description": "Set the limit for warnings issued by the bot. Once this limit is reached, action will be taken.",
@@ -94,8 +94,8 @@
     },
     "CHAT_BOT": {
       "description": "Set to 'on' if you want the bot to respond to user messages automatically. Use 'off' to disable auto-chatting.",
-      "value": "off",
-      "required": false
+      "value": "on",
+      "required": true
     },
     "STARTING_MESSAGE": {
       "description": "Show a starting message when the bot is activated. Set to 'on' to show or 'off' to hide.",
@@ -104,8 +104,8 @@
     },
     "PRESENCE": {
       "description": "Choose how you want to appear to others: 'online' (always online), 'typing' (currently typing), 'recording' (currently recording audio), or leave blank for real-time presence.",
-      "value": "",
-      "required": false
+      "value": "true",
+      "required": true
     }
   },
 
